@@ -1,0 +1,7 @@
+```
+ruby blockchain.rb
+```
+
+```
+true
+```
