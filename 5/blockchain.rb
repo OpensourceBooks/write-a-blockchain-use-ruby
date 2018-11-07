@@ -25,6 +25,7 @@ def last
     @blockchain.last
 end
 
+# 创世区块
 def g(text)
     @blockchain << block(0,text,"0")
 end
