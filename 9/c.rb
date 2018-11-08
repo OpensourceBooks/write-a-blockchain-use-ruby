@@ -5,4 +5,4 @@ require "pp"
 server = XMLRPC::Client.new2( "http://localhost:1212")
 
 # Call the remote server and get our result
-puts server.call("blockchain.get","all")
+pp server.call("blockchain.get","all")
