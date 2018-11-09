@@ -1,6 +1,9 @@
 class B
     # build
     def build
+        if File::exists?"db/blockchain"
+            File.delete('db/blockchain')
+        end
         if !File.directory?"db"
             Dir.mkdir("db")
         end

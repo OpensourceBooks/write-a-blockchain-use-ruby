@@ -6,12 +6,13 @@ require "./lib/b.rb"
 require 'xmlrpc/server'
 s = XMLRPC::Server.new(1212)
 class Handler
-    def build
-        B.new.build
-    end
-    def init(data)
-        B.new.init(data)
-    end
+    # 为了安全，rpc不可以重置、不可以创世。
+    # def build
+    #     B.new.build
+    # end
+    # def init(data)
+    #     B.new.init(data)
+    # end
     def g
         B.new.first
     end
