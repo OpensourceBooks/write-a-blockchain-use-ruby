@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title><%=@title%></title>
+    <style>
+        table, th, td{
+            border-collapse:collapse;
+            border: 0;
+            font-size:14px;
+        }
+        .wrap{
+            margin:10px auto;
+            width:100%;
+            max-width:900px;
+        }
+        .index{
+            background: #ccc;
+            width:10%;
+            text-align:center;
+        }
+        .index table{
+            width:100%;
+        }
+        .block{
+            width:90%;
+            padding: 0px;
+        }
+        .block th{
+            text-align:left;
+            border-spacing: 0px;
+            border:solid #ccc 1px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<%for block in @blocks%>
+                    <table class="wrap">
+                        <tr>
+                            <th class="index">
+                                <table >
+                                    <tr>
+                                        <th><%=block["index"]%></th>
+                                    </tr>
+                                </table>
+                            </th>
+                            <th class="block">
+                            <table >
+                                <tr>
+                                    <th>pre hash</th>
+                                    <th><%=block["pre_hash"]%></th>
+                                </tr>
+                                <tr>
+                                    <th>timestamp</th>
+                                    <th><%=block["timestamp"]%></th>
+                                </tr>
+                                <tr>
+                                    <th>data</th>
+                                    <th><%=block["data"]%></th>
+                                </tr>
+                                <tr>
+                                    <th>hash</th>
+                                    <th><%=block["hash"]%></th>
+                                </tr>
+                            </table>
+                            </th>
+                        </tr>
+                    </table>
+                    
+                <%end%>
+</body>
+</html>

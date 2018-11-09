@@ -19,6 +19,7 @@
 ```
 gem install sqlite3
 gem install xmlrpc
+gem install sinatra
 ```
 
 ### 必要基础
