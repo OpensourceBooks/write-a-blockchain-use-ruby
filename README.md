@@ -62,6 +62,8 @@ gem install sinatra
 
 12）增加区块链浏览器 [阅读](12/README.md)
 
+13）增加RESTFul API [阅读](13/README.md)
+
 ### bug 提交
 
 只要有代码，就难免有bug。欢迎大家提交bug。

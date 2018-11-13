@@ -40,3 +40,39 @@ ruby app.rb localhost 1212
 ```
 http://localhost:3000/
 ```
+
+### api 服务器
+
+增加了RESFul 的API
+
+```
+ruby api.rb 3000
+```
+
+```
+http://localhost:3000/all
+```
+
+```
+http://localhost:3000/first
+```
+
+```
+http://localhost:3000/last
+```
+
+```
+http://localhost:3000/add/hello
+```
+
+```
+http://localhost:3000/g
+```
+
+```
+http://localhost:3000/i
+```
+
+```
+http://localhost:3000/v
+```

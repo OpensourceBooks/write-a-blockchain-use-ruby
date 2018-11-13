@@ -4,12 +4,7 @@ require "./lib/c.rb"
 require "./lib/h.rb"
 require "./lib/b.rb"
 require 'xmlrpc/server'
-
-port = ARGV[0]
-if port == nil
-    port = 1212
-end
-s = XMLRPC::Server.new(port)
+s = XMLRPC::Server.new(1212)
 class Handler
     # 为了安全，rpc不可以重置、不可以创世。
     # def build
